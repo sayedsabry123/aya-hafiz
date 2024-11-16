@@ -1,0 +1,253 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تنسيق الجسم */
+body {
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5iJ8PSi75IBuUfPg57ffbURWl6MISy5-YQqgb9EzE1_h6IorTFO4UFSDpUHdqgomGO2pGv4zuFha802pR_pfwcPa2beI0eDaSH6T8Lezkc8jGJhPRd2TaR4_CWXWhWxo4HSO-oHzq4GhZmvRdMXLE0FHnn6GpcodZxFOzmYnds48YNKs_r_si-cBmxiU/s1792/DALL%C2%B7E%202024-10-24%2015.11.03%20-%20A%20detailed%20and%20vibrant%20image%20of%20the%20solar%20system,%20showing%20the%20Sun%20at%20the%20center%20with%20bright%20solar%20flares,%20and%20all%20eight%20planets%20orbiting%20around%20it.%20Th.webp); /* مسار الصورة */
+    background-size: cover; /* لتغطية كامل الخلفية */
+    background-position: center center; /* لضبط الصورة في المنتصف */
+    background-attachment: fixed; /* لجعل الصورة ثابتة عند التمرير */
+    color: #fff; /* لون النص */
+}
+
+
+/* الهيدر */
+header {
+    background-color: rgba(83, 6, 6, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+header h1 {
+    font-size: 60px;
+    color: #dbb6af;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* قائمة التنقل */
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* الحاوية للأقسام بالعرض */
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+/* تنسيق القسم */
+.section {
+    width: 250px; /* عرض ثابت */
+    height: 250px; /* ارتفاع ثابت */
+    border-radius: 50%; /* جعل الأشكال دائرية */
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+    background-size: cover;
+    text-align: center;
+}
+
+/* تأثير التكبير والدوران عند التمرير */
+.section:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #f7e25a;
+    margin-bottom: 16px;
+}
+
+.section p {
+    font-size: 16px;
+    color: hsla(338, 100%, 98%, 0.932);
+}
+
+/* خلفيات خاصة بالأقسام */
+#f1 {
+    background: url(https://astrobia.com/wp-content/uploads/2020/08/Orbit.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#f2 {
+    background: url('https://arabicpost.net/wp-content/uploads/2019/02/iStock-671274014.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#f3 {
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/779/400/desktop-wallpaper-milky-way-above-the-mountains-6948-galaxy-stars-over-mountain.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#f4 {
+    background: url('https://jawak.com/uploads/2023/04/1681639876-space-background-colorful-nebula-with-stars-space-2022-11-01-23-05-34-utc-1024x615.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#f5 {
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20230717/pngtree-astonishing-meteorites-in-the-vast-expanse-of-space-3d-rendered-sci-image_3892990.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#f6 {
+    background: url('https://alroya.om/thumb/w730/uploads/images/2024/08/JvDjV.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+#f7 {
+    background: url('https://alkhadraasy.com/wp-content/uploads/2020/01/46-12.jpg') no-repeat center center;
+    background-size: cover;
+}
+#f8 {
+    background: url(https://blogimage.vantagecircle.com/content/images/2019/03/teamwork-quotes.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* تأثيرات عند تمرير الماوس */
+a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+/* الفوتر */
+footer {
+    background-color: rgba(88, 65, 65, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* إعدادات المعرض */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* محاذاة أفقية */
+    align-items: center; /* محاذاة عمودية */
+    height: 90vh; /* تغطي الشاشة بالكامل */
+}
+
+/* حاوية العرض */
+.gallery-container {
+    width: 80%; /* عرض الحاوية */
+    max-width: 800px; /* الحد الأقصى للعرض */
+    height: 500px; /* ارتفاع الحاوية */
+    position: relative;
+    overflow: hidden; /* إخفاء الأجزاء التي تخرج عن الإطار */
+    border-radius: 40px; /* حواف دائرية */
+    box-shadow: 0px 4px 20px rgba(32, 32, 32, 0.8); /* تأثير ظل */
+}
+
+/* الصور داخل الحاوية */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ملء الحاوية بالكامل */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* إخفاء الصور في البداية */
+    animation: slider 16s infinite; /* تأثير السلايدر */
+}
+
+/* التوقيت لكل صورة */
+.gallery-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.gallery-image:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.gallery-image:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.gallery-image:nth-child(4) {
+    animation-delay: 12s;
+}
+
+/* حركة السلايدر */
+@keyframes slider {
+    0%, 25% {
+        opacity: 1; /* إظهار الصورة */
+    }
+    30%, 100% {
+        opacity: 0; /* إخفاء الصورة */
+    }
+}
+
+/* تنسيق خانة "شاركنا برأيك" */
+.feedback-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin: 50px auto;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    color: #fff;
+    text-align: center;
+}
+
+.feedback-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.feedback-form button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.feedback-form button:hover {
+    background-color: #ffd700;
+}
